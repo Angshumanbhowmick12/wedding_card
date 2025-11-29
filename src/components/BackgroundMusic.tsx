@@ -93,7 +93,7 @@ export const BackgroundMusic = () => {
           className="rounded-full w-auto h-14 shadow-xl hover:scale-110 transition-transform duration-300 bg-card/90 backdrop-blur-sm border-2 border-primary/20"
         >
         
-          Click to play music
+          Click to play music 
           <Music className={`${isPlaying ? "animate-pulse" : ""}`} size={24} />
         
         
