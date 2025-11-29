@@ -85,13 +85,18 @@ export const BackgroundMusic = () => {
 
       {/* Music control button - fixed position */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-2">
+      
         <Button
           onClick={togglePlay}
           size="lg"
           variant="secondary"
-          className="rounded-full w-14 h-14 shadow-xl hover:scale-110 transition-transform duration-300 bg-card/90 backdrop-blur-sm border-2 border-primary/20"
+          className="rounded-full w-auto h-14 shadow-xl hover:scale-110 transition-transform duration-300 bg-card/90 backdrop-blur-sm border-2 border-primary/20"
         >
+        
+          Click to play music
           <Music className={`${isPlaying ? "animate-pulse" : ""}`} size={24} />
+        
+        
         </Button>
         
         {isPlaying && (
